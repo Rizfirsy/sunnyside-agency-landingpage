@@ -79,6 +79,10 @@ li {
 	cursor: pointer;
 }
 
+.mobile-menu {
+	display: none;
+}
+
 .nav--links .nav--btn {
 	background-color: white;
 	border-radius: 50px;
@@ -290,6 +294,7 @@ li {
 	text-align: center;
 
 	margin: 0 2em;
+	/* border: solid pink; */
 }
 
 .review img {
@@ -390,6 +395,38 @@ footer .social--media i:hover, footer .footer--menu li:hover {
 
 @media screen and (max-width: 768px) {
 
+	nav {
+		/* border: solid pink; */
+		padding: 2rem;
+	}
+
+	.mobile-menu {
+		/* display: block; */
+		position: fixed;
+		padding: 2rem;
+		/* width: 100%; */
+		height: auto;
+		background-color: var(--white);
+
+		right: 2em;
+		left: 2em;
+		top: 100px;
+	}
+	
+	.mobile--links {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.mobile--nav--btn {
+		background-color: var(--primary-yellow);
+		border-radius: 50px;
+		font-family: var(--heading-font);
+	}
+
 	.hero {
 		background-position: bottom;
 		height: unset;
@@ -455,12 +492,17 @@ footer .social--media i:hover, footer .footer--menu li:hover {
 		grid-area: 3;
 	}
 
+	.testimonial {
+		padding: unset;
+		padding: 3rem 1rem;
+	}
+
 	.testimonial h1 {
 		text-align: center;
 		font-size: 1rem;
 		text-transform: uppercase;
-		letter-spacing: 10px;
-		margin-bottom: 2em;
+		letter-spacing: 5px;
+		margin-bottom: unset;
 	}
 
 	.testimonial .reviews--container {
@@ -469,6 +511,16 @@ footer .social--media i:hover, footer .footer--menu li:hover {
 		flex-flow: column;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.review {
+		margin:  unset;
+		margin:  3em 0;
+	}
+
+	.review p {
+		padding: 1rem;
+		margin-bottom: 2em;
 	}
 
 	.gallery {
